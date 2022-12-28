@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity seven_segment is
+  port (
+    n : in integer range 0 to 9;
+    LED : out std_logic_vector(7 downto 0)
+  );
+end seven_segment;
+
+architecture Behavioral of seven_segment is
+begin
+  LED <= "11111100" when n = 0 else
+    "01100000" when n = 1 else
+    "11011010" when n = 2 else
+    "11110010" when n = 3 else
+    "01100110" when n = 4 else
+    "10110110" when n = 5 else
+    "10111110" when n = 6 else
+    "11100000" when n = 7 else
+    "11111110" when n = 8 else
+    "11110110" when n = 9 else
+    "00000000";
+
+end Behavioral;

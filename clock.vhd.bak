@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity clock is
+  port (
+    clk : in std_logic;
+    reset : in std_logic;
+    SW : in std_logic;
+    BUT : in std_logic_vector(2 downto 0);
+    LED0 : in std_logic_vector(7 downto 0);
+    LED1 : in std_logic_vector(7 downto 0);
+    LED2 : in std_logic_vector(7 downto 0);
+    LED3 : in std_logic_vector(7 downto 0)
+  );
+end entity;
+architecture clock of clock is
+  signal m : std_logic(5 downto 0) := "000000";
+  signal h : std_logic(5 downto 0) := "000000";
+
+begin
+  process (all)
+  begin
+    if SW = '0' then -- 設定時間
+      if (rising_edge(clk)) then
+        if BUT(0)'event and BUT(0) = '0' then
+          m <= m + 1;
+        end if;
+
+        if BUT(1)'event and BUT(1) = '0' then
+          h <= h + 1;
+        end if;
+      end if;
+    elsif SW = '1' then -- 時鐘模式
+      if (rising_edge(clk)) then
+        if (m = "111111") then
+          m <= "000000";
+          if (h = "111111") then
+            h <= "000000";
+          else
+            h <= h + 1;
+          end if;
+        else
+          m <= m + 1;
+        end if;
+      end if;
+    end if;
+  end process;
+end architecture;
