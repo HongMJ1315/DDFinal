@@ -8,38 +8,38 @@ SW[3] => ~NO_FANOUT~
 BUT[0] => clock:CLOCK_0.BUT[0]
 BUT[1] => clock:CLOCK_0.BUT[1]
 BUT[2] => clock:CLOCK_0.BUT[2]
-LED0[0] <= seven_dig:SEVEN_SEG_0.LED[0]
-LED0[1] <= seven_dig:SEVEN_SEG_0.LED[1]
-LED0[2] <= seven_dig:SEVEN_SEG_0.LED[2]
-LED0[3] <= seven_dig:SEVEN_SEG_0.LED[3]
-LED0[4] <= seven_dig:SEVEN_SEG_0.LED[4]
-LED0[5] <= seven_dig:SEVEN_SEG_0.LED[5]
-LED0[6] <= seven_dig:SEVEN_SEG_0.LED[6]
-LED0[7] <= seven_dig:SEVEN_SEG_0.LED[7]
-LED1[0] <= seven_dig:SEVEN_SEG_1.LED[0]
-LED1[1] <= seven_dig:SEVEN_SEG_1.LED[1]
-LED1[2] <= seven_dig:SEVEN_SEG_1.LED[2]
-LED1[3] <= seven_dig:SEVEN_SEG_1.LED[3]
-LED1[4] <= seven_dig:SEVEN_SEG_1.LED[4]
-LED1[5] <= seven_dig:SEVEN_SEG_1.LED[5]
-LED1[6] <= seven_dig:SEVEN_SEG_1.LED[6]
-LED1[7] <= seven_dig:SEVEN_SEG_1.LED[7]
-LED2[0] <= seven_dig:SEVEN_SEG_2.LED[0]
-LED2[1] <= seven_dig:SEVEN_SEG_2.LED[1]
-LED2[2] <= seven_dig:SEVEN_SEG_2.LED[2]
-LED2[3] <= seven_dig:SEVEN_SEG_2.LED[3]
-LED2[4] <= seven_dig:SEVEN_SEG_2.LED[4]
-LED2[5] <= seven_dig:SEVEN_SEG_2.LED[5]
-LED2[6] <= seven_dig:SEVEN_SEG_2.LED[6]
-LED2[7] <= seven_dig:SEVEN_SEG_2.LED[7]
-LED3[0] <= seven_dig:SEVEN_SEG_3.LED[0]
-LED3[1] <= seven_dig:SEVEN_SEG_3.LED[1]
-LED3[2] <= seven_dig:SEVEN_SEG_3.LED[2]
-LED3[3] <= seven_dig:SEVEN_SEG_3.LED[3]
-LED3[4] <= seven_dig:SEVEN_SEG_3.LED[4]
-LED3[5] <= seven_dig:SEVEN_SEG_3.LED[5]
-LED3[6] <= seven_dig:SEVEN_SEG_3.LED[6]
-LED3[7] <= seven_dig:SEVEN_SEG_3.LED[7]
+dp[0] << clock:CLOCK_0.dp[0]
+dp[1] << clock:CLOCK_0.dp[1]
+dp[2] << clock:CLOCK_0.dp[2]
+dp[3] << clock:CLOCK_0.dp[3]
+LED0[0] << seven_dig:SEVEN_SEG_0.LED[0]
+LED0[1] << seven_dig:SEVEN_SEG_0.LED[1]
+LED0[2] << seven_dig:SEVEN_SEG_0.LED[2]
+LED0[3] << seven_dig:SEVEN_SEG_0.LED[3]
+LED0[4] << seven_dig:SEVEN_SEG_0.LED[4]
+LED0[5] << seven_dig:SEVEN_SEG_0.LED[5]
+LED0[6] << seven_dig:SEVEN_SEG_0.LED[6]
+LED1[0] << seven_dig:SEVEN_SEG_1.LED[0]
+LED1[1] << seven_dig:SEVEN_SEG_1.LED[1]
+LED1[2] << seven_dig:SEVEN_SEG_1.LED[2]
+LED1[3] << seven_dig:SEVEN_SEG_1.LED[3]
+LED1[4] << seven_dig:SEVEN_SEG_1.LED[4]
+LED1[5] << seven_dig:SEVEN_SEG_1.LED[5]
+LED1[6] << seven_dig:SEVEN_SEG_1.LED[6]
+LED2[0] << seven_dig:SEVEN_SEG_2.LED[0]
+LED2[1] << seven_dig:SEVEN_SEG_2.LED[1]
+LED2[2] << seven_dig:SEVEN_SEG_2.LED[2]
+LED2[3] << seven_dig:SEVEN_SEG_2.LED[3]
+LED2[4] << seven_dig:SEVEN_SEG_2.LED[4]
+LED2[5] << seven_dig:SEVEN_SEG_2.LED[5]
+LED2[6] << seven_dig:SEVEN_SEG_2.LED[6]
+LED3[0] << seven_dig:SEVEN_SEG_3.LED[0]
+LED3[1] << seven_dig:SEVEN_SEG_3.LED[1]
+LED3[2] << seven_dig:SEVEN_SEG_3.LED[2]
+LED3[3] << seven_dig:SEVEN_SEG_3.LED[3]
+LED3[4] << seven_dig:SEVEN_SEG_3.LED[4]
+LED3[5] << seven_dig:SEVEN_SEG_3.LED[5]
+LED3[6] << seven_dig:SEVEN_SEG_3.LED[6]
 
 
 |main|clock:CLOCK_0
@@ -54,6 +54,8 @@ clk => th1[1].CLK
 clk => th1[2].CLK
 clk => th1[3].CLK
 clk => th1[4].CLK
+clk => secc.CLK
+reset => ff.ACLR
 reset => tm2[0].ACLR
 reset => tm2[1].ACLR
 reset => tm2[2].ACLR
@@ -76,6 +78,7 @@ reset => th1[1].ACLR
 reset => th1[2].ACLR
 reset => th1[3].ACLR
 reset => th1[4].ACLR
+reset => secc.ACLR
 SW => h[4].OUTPUTSELECT
 SW => h[3].OUTPUTSELECT
 SW => h[2].OUTPUTSELECT
@@ -98,7 +101,11 @@ BUT[1] => tm2[2].CLK
 BUT[1] => tm2[3].CLK
 BUT[1] => tm2[4].CLK
 BUT[1] => tm2[5].CLK
-BUT[2] => ~NO_FANOUT~
+BUT[2] => ff.CLK
+dp[0] <= ff.DB_MAX_OUTPUT_PORT_TYPE
+dp[1] <= <GND>
+dp[2] <= secc.DB_MAX_OUTPUT_PORT_TYPE
+dp[3] <= <GND>
 digit0[0] <= todigits:todig1.digit1[0]
 digit0[1] <= todigits:todig1.digit1[1]
 digit0[2] <= todigits:todig1.digit1[2]
@@ -199,14 +206,13 @@ n[3] => Equal6.IN0
 n[3] => Equal7.IN0
 n[3] => Equal8.IN0
 n[3] => Equal9.IN0
-LED[0] <= <VCC>
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[1] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[2] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[3] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[4] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[5] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[6] <= LED.DB_MAX_OUTPUT_PORT_TYPE
-LED[7] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|seven_dig:SEVEN_SEG_1
@@ -250,14 +256,13 @@ n[3] => Equal6.IN0
 n[3] => Equal7.IN0
 n[3] => Equal8.IN0
 n[3] => Equal9.IN0
-LED[0] <= <VCC>
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[1] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[2] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[3] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[4] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[5] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[6] <= LED.DB_MAX_OUTPUT_PORT_TYPE
-LED[7] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|seven_dig:SEVEN_SEG_2
@@ -301,14 +306,13 @@ n[3] => Equal6.IN0
 n[3] => Equal7.IN0
 n[3] => Equal8.IN0
 n[3] => Equal9.IN0
-LED[0] <= <VCC>
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[1] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[2] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[3] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[4] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[5] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[6] <= LED.DB_MAX_OUTPUT_PORT_TYPE
-LED[7] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|seven_dig:SEVEN_SEG_3
@@ -352,13 +356,12 @@ n[3] => Equal6.IN0
 n[3] => Equal7.IN0
 n[3] => Equal8.IN0
 n[3] => Equal9.IN0
-LED[0] <= <VCC>
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[1] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[2] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[3] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[4] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[5] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 LED[6] <= LED.DB_MAX_OUTPUT_PORT_TYPE
-LED[7] <= LED.DB_MAX_OUTPUT_PORT_TYPE
 
 

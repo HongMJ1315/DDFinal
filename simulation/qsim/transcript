@@ -13,16 +13,19 @@
 # 
 # Top level modules:
 # 	main_vlg_vec_tst
-# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.main_vlg_vec_tst 
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.main_vlg_vec_tst 
 # Loading work.main_vlg_vec_tst
 # Loading work.main
-# Loading cycloneiii_ver.cycloneiii_io_obuf
-# Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading altera_ver.dffeas
 # Loading work.main_vlg_sample_tst
 # Loading work.main_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(735)
+# ERROR! Vector Mismatch for output port dp[2] :: @time = 20000.000 ps
+#      Expected value = 0000
+#      Real value = 0100
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(743)
 #    Time: 1 us  Iteration: 0  Instance: /main_vlg_vec_tst/tb_out

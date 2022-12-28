@@ -1,5 +1,5 @@
 Flow report for main
-Thu Dec 29 00:57:26 2022
+Thu Dec 29 02:20:59 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,21 +40,23 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 29 00:57:26 2022      ;
+; Flow Status                        ; Successful - Thu Dec 29 02:20:59 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
-; Family                             ; Cyclone III                                ;
-; Device                             ; EP3C16F484C6                               ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 162                                        ;
-;     Total combinational functions  ; 156                                        ;
-;     Dedicated logic registers      ; 22                                         ;
-; Total registers                    ; 22                                         ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 172                                        ;
+;     Total combinational functions  ; 166                                        ;
+;     Dedicated logic registers      ; 24                                         ;
+; Total registers                    ; 24                                         ;
 ; Total pins                         ; 41                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
@@ -64,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/29/2022 00:56:56 ;
+; Start date & time ; 12/29/2022 02:20:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -75,17 +77,14 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 66504332877567.167224661631660                                      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 66504332877567.167225165326412                                      ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                         ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                           ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                  ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                   ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                                                            ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                               ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                                              ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                        ; --            ; --          ; --             ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -94,12 +93,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4670 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4544 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4544 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4544 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4544 MB             ; 00:00:00                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4595 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4610 MB             ; 00:00:01                           ;
+; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,8 +108,6 @@ applicable agreement for further details.
 ; Analysis & Synthesis ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -120,8 +115,6 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
 

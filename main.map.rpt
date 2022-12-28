@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Thu Dec 29 00:56:58 2022
+Thu Dec 29 02:20:54 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -46,19 +46,23 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 29 00:56:58 2022      ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 29 02:20:54 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
-; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 162                                        ;
-;     Total combinational functions  ; 156                                        ;
-;     Dedicated logic registers      ; 22                                         ;
-; Total registers                    ; 22                                         ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 172                                        ;
+;     Total combinational functions  ; 166                                        ;
+;     Dedicated logic registers      ; 24                                         ;
+; Total registers                    ; 24                                         ;
 ; Total pins                         ; 41                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
@@ -68,9 +72,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP3C16F484C6       ;                    ;
 ; Top-level entity name                                                      ; main               ; main               ;
-; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -166,90 +169,74 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; seven_dig.vhd                    ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/seven_dig.vhd              ;         ;
 ; todigits.vhd                     ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/todigits.vhd               ;         ;
-; clock.vhd                        ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/clock.vhd                  ;         ;
+; seven_dig.vhd                    ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/seven_dig.vhd              ;         ;
 ; main.vhd                         ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/main.vhd                   ;         ;
+; clock.vhd                        ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/clock.vhd                  ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                 ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc            ;         ;
 ; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                 ;         ;
-; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_7gm.tdf      ;         ;
+; db/lpm_divide_alm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_alm.tdf      ;         ;
 ; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_8kh.tdf ;         ;
 ; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_u7f.tdf       ;         ;
 ; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_1tc.tdf         ;         ;
 ; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_2tc.tdf         ;         ;
-; db/lpm_divide_b8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_b8m.tdf      ;         ;
+; db/lpm_divide_edm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_edm.tdf      ;         ;
 ; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_9kh.tdf ;         ;
 ; db/alt_u_div_08f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_08f.tdf       ;         ;
-; db/lpm_divide_8gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_8gm.tdf      ;         ;
+; db/lpm_divide_blm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_blm.tdf      ;         ;
 ; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_akh.tdf ;         ;
 ; db/alt_u_div_18f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_18f.tdf       ;         ;
-; db/lpm_divide_d8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_d8m.tdf      ;         ;
+; db/lpm_divide_gdm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_gdm.tdf      ;         ;
 ; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_bkh.tdf ;         ;
 ; db/alt_u_div_48f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_48f.tdf       ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 162         ;
-;                                             ;             ;
-; Total combinational functions               ; 156         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 54          ;
-;     -- 3 input functions                    ; 48          ;
-;     -- <=2 input functions                  ; 54          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 119         ;
-;     -- arithmetic mode                      ; 37          ;
-;                                             ;             ;
-; Total registers                             ; 22          ;
-;     -- Dedicated logic registers            ; 22          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 41          ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; SW[0]~input ;
-; Maximum fan-out                             ; 33          ;
-; Total fan-out                               ; 590         ;
-; Average fan-out                             ; 2.27        ;
-+---------------------------------------------+-------------+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 41               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; SW[0]~input      ;
+; Maximum fan-out          ; 37               ;
+; Total fan-out            ; 628              ;
+; Average fan-out          ; 2.31             ;
++--------------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                           ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                 ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main                                        ; 156 (0)           ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |main                                                                                                                               ; work         ;
-;    |clock:CLOCK_0|                           ; 129 (26)          ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0                                                                                                                 ; work         ;
-;       |todigits:todig1|                      ; 103 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1                                                                                                 ; work         ;
-;          |lpm_divide:Div0|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0                                                                                 ; work         ;
-;             |lpm_divide_7gm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_7gm:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_8kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
-;                   |alt_u_div_u7f:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; work         ;
-;          |lpm_divide:Div1|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1                                                                                 ; work         ;
-;             |lpm_divide_8gm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_8gm:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_akh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_8gm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
-;                   |alt_u_div_18f:divider|    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_8gm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_18f:divider ; work         ;
-;          |lpm_divide:Mod0|                   ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0                                                                                 ; work         ;
-;             |lpm_divide_b8m:auto_generated|  ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_b8m:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_9kh:divider| ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
-;                   |alt_u_div_08f:divider|    ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_08f:divider ; work         ;
-;          |lpm_divide:Mod1|                   ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1                                                                                 ; work         ;
-;             |lpm_divide_d8m:auto_generated|  ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_d8m:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_bkh:divider| ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_d8m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
-;                   |alt_u_div_48f:divider|    ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_d8m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_48f:divider ; work         ;
-;    |seven_dig:SEVEN_SEG_0|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_0                                                                                                         ; work         ;
-;    |seven_dig:SEVEN_SEG_1|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_1                                                                                                         ; work         ;
-;    |seven_dig:SEVEN_SEG_2|                   ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_2                                                                                                         ; work         ;
-;    |seven_dig:SEVEN_SEG_3|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_3                                                                                                         ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                       ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                 ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |main                                        ; 166 (0)           ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 41   ; 0            ; |main                                                                                                                               ; work         ;
+;    |clock:CLOCK_0|                           ; 139 (36)          ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0                                                                                                                 ; work         ;
+;       |todigits:todig1|                      ; 103 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1                                                                                                 ; work         ;
+;          |lpm_divide:Div0|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0                                                                                 ; work         ;
+;             |lpm_divide_alm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_alm:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_8kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_alm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
+;                   |alt_u_div_u7f:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0|lpm_divide_alm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; work         ;
+;          |lpm_divide:Div1|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1                                                                                 ; work         ;
+;             |lpm_divide_blm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_blm:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_akh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_blm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
+;                   |alt_u_div_18f:divider|    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div1|lpm_divide_blm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_18f:divider ; work         ;
+;          |lpm_divide:Mod0|                   ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0                                                                                 ; work         ;
+;             |lpm_divide_edm:auto_generated|  ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_edm:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_9kh:divider| ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_edm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
+;                   |alt_u_div_08f:divider|    ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0|lpm_divide_edm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_08f:divider ; work         ;
+;          |lpm_divide:Mod1|                   ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1                                                                                 ; work         ;
+;             |lpm_divide_gdm:auto_generated|  ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_gdm:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_bkh:divider| ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_gdm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                   |alt_u_div_48f:divider|    ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod1|lpm_divide_gdm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_48f:divider ; work         ;
+;    |seven_dig:SEVEN_SEG_0|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_0                                                                                                         ; work         ;
+;    |seven_dig:SEVEN_SEG_1|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_1                                                                                                         ; work         ;
+;    |seven_dig:SEVEN_SEG_2|                   ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_2                                                                                                         ; work         ;
+;    |seven_dig:SEVEN_SEG_3|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_3                                                                                                         ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -258,10 +245,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 22    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 22    ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -275,10 +262,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_0|LED    ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_2|LED    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_0|LED[1] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_1|LED[2] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_2|LED[2] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_3|LED[2] ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |main|clock:CLOCK_0|h[3]           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_0|LED[0] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_1|LED[1] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_2|LED[1] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_3|LED[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -294,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LPM_PIPELINE           ; 0              ; Untyped                                              ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_alm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -317,7 +305,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_PIPELINE           ; 0              ; Untyped                                              ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_b8m ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_edm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -340,7 +328,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_PIPELINE           ; 0              ; Untyped                                              ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_8gm ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_blm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -363,7 +351,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_PIPELINE           ; 0              ; Untyped                                              ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_d8m ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_gdm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -389,21 +377,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Dec 29 00:56:56 2022
+    Info: Processing started: Thu Dec 29 02:20:52 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file seven_dig.vhd
-    Info (12022): Found design unit 1: seven_dig-Behavioral
-    Info (12023): Found entity 1: seven_dig
 Info (12021): Found 2 design units, including 1 entities, in source file todigits.vhd
     Info (12022): Found design unit 1: todigits-arch
     Info (12023): Found entity 1: todigits
-Info (12021): Found 2 design units, including 1 entities, in source file clock.vhd
-    Info (12022): Found design unit 1: clock-clock
-    Info (12023): Found entity 1: clock
+Info (12021): Found 2 design units, including 1 entities, in source file seven_dig.vhd
+    Info (12022): Found design unit 1: seven_dig-Behavioral
+    Info (12023): Found entity 1: seven_dig
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
     Info (12022): Found design unit 1: main-main
     Info (12023): Found entity 1: main
+Info (12021): Found 2 design units, including 1 entities, in source file clock.vhd
+    Info (12022): Found design unit 1: clock-clock
+    Info (12023): Found entity 1: clock
 Info (12127): Elaborating entity "main" for the top level hierarchy
 Info (12128): Elaborating entity "clock" for hierarchy "clock:CLOCK_0"
 Info (12128): Elaborating entity "todigits" for hierarchy "clock:CLOCK_0|todigits:todig1"
@@ -419,8 +407,8 @@ Info (12133): Instantiated megafunction "clock:CLOCK_0|todigits:todig1|lpm_divid
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7gm.tdf
-    Info (12023): Found entity 1: lpm_divide_7gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_alm.tdf
+    Info (12023): Found entity 1: lpm_divide_alm
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
     Info (12023): Found entity 1: sign_div_unsign_8kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u7f.tdf
@@ -435,8 +423,8 @@ Info (12133): Instantiated megafunction "clock:CLOCK_0|todigits:todig1|lpm_divid
     Info (12134): Parameter "LPM_WIDTHD" = "5"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_b8m.tdf
-    Info (12023): Found entity 1: lpm_divide_b8m
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_edm.tdf
+    Info (12023): Found entity 1: lpm_divide_edm
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
     Info (12023): Found entity 1: sign_div_unsign_9kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_08f.tdf
@@ -447,8 +435,8 @@ Info (12133): Instantiated megafunction "clock:CLOCK_0|todigits:todig1|lpm_divid
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8gm.tdf
-    Info (12023): Found entity 1: lpm_divide_8gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_blm.tdf
+    Info (12023): Found entity 1: lpm_divide_blm
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
     Info (12023): Found entity 1: sign_div_unsign_akh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_18f.tdf
@@ -459,33 +447,30 @@ Info (12133): Instantiated megafunction "clock:CLOCK_0|todigits:todig1|lpm_divid
     Info (12134): Parameter "LPM_WIDTHD" = "6"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_d8m.tdf
-    Info (12023): Found entity 1: lpm_divide_d8m
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gdm.tdf
+    Info (12023): Found entity 1: lpm_divide_gdm
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
     Info (12023): Found entity 1: sign_div_unsign_bkh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_48f.tdf
     Info (12023): Found entity 1: alt_u_div_48f
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LED0[0]" is stuck at VCC
-    Warning (13410): Pin "LED0[6]" is stuck at GND
-    Warning (13410): Pin "LED1[0]" is stuck at VCC
-    Warning (13410): Pin "LED2[0]" is stuck at VCC
-    Warning (13410): Pin "LED3[0]" is stuck at VCC
+    Warning (13410): Pin "dp[1]" is stuck at GND
+    Warning (13410): Pin "dp[3]" is stuck at GND
+    Warning (13410): Pin "LED0[5]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
-    Warning (15610): No output dependent on input pin "BUT[2]"
-Info (21057): Implemented 218 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 222 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 177 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4681 megabytes
-    Info: Processing ended: Thu Dec 29 00:56:58 2022
+    Info (21061): Implemented 181 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4727 megabytes
+    Info: Processing ended: Thu Dec 29 02:20:54 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
