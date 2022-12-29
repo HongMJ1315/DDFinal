@@ -7,9 +7,10 @@ entity main is
         SW              : in     vl_logic_vector(3 downto 0);
         BUT             : in     vl_logic_vector(2 downto 0);
         dp              : out    vl_logic_vector(3 downto 0);
-        LED0            : out    vl_logic_vector(6 downto 0);
-        LED1            : out    vl_logic_vector(6 downto 0);
-        LED2            : out    vl_logic_vector(6 downto 0);
-        LED3            : out    vl_logic_vector(6 downto 0)
+        ring            : out    vl_logic;
+        SEG0            : out    vl_logic_vector(6 downto 0);
+        SEG1            : out    vl_logic_vector(6 downto 0);
+        SEG2            : out    vl_logic_vector(6 downto 0);
+        SEG3            : out    vl_logic_vector(6 downto 0)
     );
 end main;

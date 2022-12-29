@@ -16,13 +16,10 @@ entity clock is
     digit3 : out integer range 0 to 9
   );
 end entity;
+
 architecture clock of clock is
   signal m : integer range 0 to 59;
   signal h : integer range 0 to 23;
-  signal d0 : integer range 0 to 9;
-  signal d1 : integer range 0 to 9;
-  signal d2 : integer range 0 to 9;
-  signal d3 : integer range 0 to 9;
   component todigits is
     port (
       h : in integer range 0 to 23;
@@ -45,11 +42,12 @@ architecture clock of clock is
       digit4 : out integer range 0 to 9
     );
   end component;
+
+  
   signal dig11, dig12, dig13, dig14, dig21, dig22, dig23, dig24 : integer range 0 to 9;
 
   signal tm1, tm2 : integer range 0 to 59;
   signal th1, th2 : integer range 0 to 23;
-  signal th12, th22 : integer range 0 to 23;
   signal ff, secc, clk2, dot : std_logic;
   signal dcnt : std_logic_vector(6 downto 0);
 begin
@@ -84,19 +82,7 @@ begin
       end if;
     end if;
   end process;
-  -- clk2 <= dcnt(5) and dcnt(4) and dcnt(3) and dcnt(2); --500Hz		
-  -- clk2 <= clk; --500Hz		
-  -- process (clk2, reset, SW, BUT, h, m)
-  -- begin
-  --   if reset = '1' then -- reset
-  --     th1 <= 0;
-  --     tm1 <= 0;
-  --   else
-  --     if rising_edge(clk2) then
 
-  --     end if;
-  --   end if;
-  -- end process;
   process (reset, BUT(0))
   begin
     if reset = '1' then -- reset

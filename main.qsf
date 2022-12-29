@@ -49,6 +49,8 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VHDL_FILE digits.vhd
+set_global_assignment -name VHDL_FILE alarm.vhd
 set_global_assignment -name VHDL_FILE stopwatch.vhd
 set_global_assignment -name VHDL_FILE thtf.vhd
 set_global_assignment -name VHDL_FILE todigits.vhd
