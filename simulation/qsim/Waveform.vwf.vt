@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/29/2022 02:20:58"
+// Generated on "12/29/2022 19:29:02"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    main
 // 
@@ -142,141 +142,169 @@ end
 initial
 begin
 	LED0_expected[6] = 1'bX;
+	LED0_expected[6] = #999000 1'b0;
 end 
 // expected LED0[ 5 ]
 initial
 begin
 	LED0_expected[5] = 1'bX;
+	LED0_expected[5] = #999000 1'b0;
 end 
 // expected LED0[ 4 ]
 initial
 begin
 	LED0_expected[4] = 1'bX;
+	LED0_expected[4] = #999000 1'b0;
 end 
 // expected LED0[ 3 ]
 initial
 begin
 	LED0_expected[3] = 1'bX;
+	LED0_expected[3] = #999000 1'b0;
 end 
 // expected LED0[ 2 ]
 initial
 begin
 	LED0_expected[2] = 1'bX;
+	LED0_expected[2] = #999000 1'b0;
 end 
 // expected LED0[ 1 ]
 initial
 begin
 	LED0_expected[1] = 1'bX;
+	LED0_expected[1] = #999000 1'b0;
 end 
 // expected LED0[ 0 ]
 initial
 begin
 	LED0_expected[0] = 1'bX;
+	LED0_expected[0] = #999000 1'b0;
 end 
 // expected LED1[ 6 ]
 initial
 begin
 	LED1_expected[6] = 1'bX;
+	LED1_expected[6] = #999000 1'b0;
 end 
 // expected LED1[ 5 ]
 initial
 begin
 	LED1_expected[5] = 1'bX;
+	LED1_expected[5] = #999000 1'b0;
 end 
 // expected LED1[ 4 ]
 initial
 begin
 	LED1_expected[4] = 1'bX;
+	LED1_expected[4] = #999000 1'b0;
 end 
 // expected LED1[ 3 ]
 initial
 begin
 	LED1_expected[3] = 1'bX;
+	LED1_expected[3] = #999000 1'b0;
 end 
 // expected LED1[ 2 ]
 initial
 begin
 	LED1_expected[2] = 1'bX;
+	LED1_expected[2] = #999000 1'b0;
 end 
 // expected LED1[ 1 ]
 initial
 begin
 	LED1_expected[1] = 1'bX;
+	LED1_expected[1] = #999000 1'b0;
 end 
 // expected LED1[ 0 ]
 initial
 begin
 	LED1_expected[0] = 1'bX;
+	LED1_expected[0] = #999000 1'b0;
 end 
 // expected LED2[ 6 ]
 initial
 begin
 	LED2_expected[6] = 1'bX;
+	LED2_expected[6] = #999000 1'b0;
 end 
 // expected LED2[ 5 ]
 initial
 begin
 	LED2_expected[5] = 1'bX;
+	LED2_expected[5] = #999000 1'b0;
 end 
 // expected LED2[ 4 ]
 initial
 begin
 	LED2_expected[4] = 1'bX;
+	LED2_expected[4] = #999000 1'b0;
 end 
 // expected LED2[ 3 ]
 initial
 begin
 	LED2_expected[3] = 1'bX;
+	LED2_expected[3] = #999000 1'b0;
 end 
 // expected LED2[ 2 ]
 initial
 begin
 	LED2_expected[2] = 1'bX;
+	LED2_expected[2] = #999000 1'b0;
 end 
 // expected LED2[ 1 ]
 initial
 begin
 	LED2_expected[1] = 1'bX;
+	LED2_expected[1] = #999000 1'b0;
 end 
 // expected LED2[ 0 ]
 initial
 begin
 	LED2_expected[0] = 1'bX;
+	LED2_expected[0] = #999000 1'b0;
 end 
 // expected LED3[ 6 ]
 initial
 begin
 	LED3_expected[6] = 1'bX;
+	LED3_expected[6] = #999000 1'b0;
 end 
 // expected LED3[ 5 ]
 initial
 begin
 	LED3_expected[5] = 1'bX;
+	LED3_expected[5] = #999000 1'b0;
 end 
 // expected LED3[ 4 ]
 initial
 begin
 	LED3_expected[4] = 1'bX;
+	LED3_expected[4] = #999000 1'b0;
 end 
 // expected LED3[ 3 ]
 initial
 begin
 	LED3_expected[3] = 1'bX;
+	LED3_expected[3] = #999000 1'b0;
 end 
 // expected LED3[ 2 ]
 initial
 begin
 	LED3_expected[2] = 1'bX;
+	LED3_expected[2] = #999000 1'b0;
 end 
 // expected LED3[ 1 ]
 initial
 begin
 	LED3_expected[1] = 1'bX;
+	LED3_expected[1] = #999000 1'b0;
 end 
 // expected LED3[ 0 ]
 initial
 begin
 	LED3_expected[0] = 1'bX;
+	LED3_expected[0] = #999000 1'b0;
 end 
 // expected dp[ 3 ]
 initial
@@ -735,7 +763,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#10000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -777,6 +805,10 @@ main i1 (
 initial
 begin
 	BUT[2] = 1'b0;
+	BUT[2] = #200000 1'b1;
+	BUT[2] = #20000 1'b0;
+	BUT[2] = #50000 1'b1;
+	BUT[2] = #30000 1'b0;
 end 
 // BUT[ 1 ]
 initial
@@ -786,6 +818,21 @@ end
 // BUT[ 0 ]
 initial
 begin
+	BUT[0] = 1'b0;
+	BUT[0] = #25000 1'b1;
+	# 5000;
+	repeat(26)
+	begin
+		BUT[0] = 1'b0;
+		BUT[0] = #5000 1'b1;
+		# 5000;
+	end
+	repeat(9)
+	begin
+		BUT[0] = 1'b0;
+		BUT[0] = #5000 1'b1;
+		# 5000;
+	end
 	BUT[0] = 1'b0;
 end 
 // SW[ 3 ]
@@ -806,7 +853,8 @@ end
 // SW[ 0 ]
 initial
 begin
-	SW[0] = 1'b0;
+	SW[0] = 1'b1;
+	SW[0] = #450000 1'b0;
 end 
 
 // clk

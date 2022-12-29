@@ -42,10 +42,9 @@ architecture main of main is
   signal dcnt : std_logic_vector(24 downto 0);
 begin
 
-  -- 除頻器 (50MHz -> 1Hz)
   process (clk) begin
     if clk'event and clk = '1' then
-      if dcnt = 24999999 then
+      if dcnt = 49999999 then
         dcnt <= "0000000000000000000000000";
       else
         dcnt <= dcnt + 1;

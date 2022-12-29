@@ -33,10 +33,24 @@ architecture clock of clock is
       digit4 : out integer range 0 to 9
     );
   end component;
+
+  component thtf is
+    port (
+      h : in integer range 0 to 23;
+      m : in integer range 0 to 59;
+      dot : out std_logic;
+      digit1 : out integer range 0 to 9;
+      digit2 : out integer range 0 to 9;
+      digit3 : out integer range 0 to 9;
+      digit4 : out integer range 0 to 9
+    );
+  end component;
+  signal dig11, dig12, dig13, dig14, dig21, dig22, dig23, dig24 : integer range 0 to 9;
+
   signal tm1, tm2 : integer range 0 to 59;
   signal th1, th2 : integer range 0 to 23;
   signal th12, th22 : integer range 0 to 23;
-  signal ff, secc, clk2 : std_logic;
+  signal ff, secc, clk2, dot : std_logic;
   signal dcnt : std_logic_vector(6 downto 0);
 begin
   process (clk, reset)
@@ -44,40 +58,45 @@ begin
     if reset = '1' then
       dcnt <= "0000000";
       secc <= '0';
-    else
-      if clk'event and clk = '1' then
-        secc <= not secc;
-        if dcnt = 5 then
-          dcnt <= "0000000";
-        else
-          dcnt <= dcnt + 1;
-        end if;
-      end if;
-    end if;
-  end process;
-  -- clk2 <= dcnt(3); --500Hz		
-  clk2 <= clk; --500Hz		
-  process (clk2, reset, SW, BUT, h, m)
-  begin
-    if reset = '1' then -- reset
       th1 <= 0;
       tm1 <= 0;
     else
-      if rising_edge(clk2) then
-        if m = 59 then
-          if h = 23 then
-            th1 <= 0;
+      if clk'event and clk = '1' then
+        secc <= not secc;
+        if dcnt = 60 then
+          dcnt <= "0000000";
+          if m = 59 then
+            if h = 23 then
+              th1 <= 0;
+            else
+              th1 <= h + 1;
+            end if;
+            tm1 <= 0;
           else
-            th1 <= h + 1;
+            tm1 <= m + 1;
+            th1 <= h;
           end if;
-          tm1 <= 0;
         else
-          tm1 <= m + 1;
+          dcnt <= dcnt + 1;
+          tm1 <= m;
           th1 <= h;
         end if;
       end if;
     end if;
   end process;
+  -- clk2 <= dcnt(5) and dcnt(4) and dcnt(3) and dcnt(2); --500Hz		
+  -- clk2 <= clk; --500Hz		
+  -- process (clk2, reset, SW, BUT, h, m)
+  -- begin
+  --   if reset = '1' then -- reset
+  --     th1 <= 0;
+  --     tm1 <= 0;
+  --   else
+  --     if rising_edge(clk2) then
+
+  --     end if;
+  --   end if;
+  -- end process;
   process (reset, BUT(0))
   begin
     if reset = '1' then -- reset
@@ -119,9 +138,13 @@ begin
     end if;
   end process;
 
-  h <= th12 when SW = '1' else th22;
+  h <= th2 when SW = '1' else th1;
   m <= tm2 when SW = '1' else tm1;
-  dp <= '0' & secc & '0' & ff;
-  todig1 : todigits port map(h, m, digit0, digit1, digit2, digit3);
-
+  dp <= '0' & secc & '0' & dot;
+  todig1 : todigits port map(h, m, dig11, dig12, dig13, dig14);
+  thtf1 : thtf port map(h, m, dot, dig21, dig22, dig23, dig24);
+  digit0 <= dig11 when ff = '0' else dig21;
+  digit1 <= dig12 when ff = '0' else dig22;
+  digit2 <= dig13 when ff = '0' else dig23;
+  digit3 <= dig14 when ff = '0' else dig24;
 end architecture;

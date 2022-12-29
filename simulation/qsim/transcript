@@ -26,6 +26,66 @@
 # ERROR! Vector Mismatch for output port dp[2] :: @time = 20000.000 ps
 #      Expected value = 0000
 #      Real value = 0100
-#           1 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Waveform.vwf.vt(743)
-#    Time: 1 us  Iteration: 0  Instance: /main_vlg_vec_tst/tb_out
+# ERROR! Vector Mismatch for output port dp[0] :: @time = 140000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port LED0[0] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED0[1] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED0[2] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED0[3] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED0[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED1[1] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port LED1[4] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port LED2[0] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000001
+# ERROR! Vector Mismatch for output port LED3[0] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED3[1] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED3[2] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED3[3] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED3[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED3[4] :: @time = 1230000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port LED3[5] :: @time = 3060000.000 ps
+#      Expected value = 0000000
+#      Real value = 0100100
+# ERROR! Vector Mismatch for output port LED2[1] :: @time = 6110000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED2[2] :: @time = 6110000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED2[3] :: @time = 6110000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+# ERROR! Vector Mismatch for output port LED2[6] :: @time = 6110000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001111
+#          21 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(771)
+#    Time: 10 us  Iteration: 0  Instance: /main_vlg_vec_tst/tb_out
