@@ -23,9 +23,15 @@
 # Loading work.main_vlg_sample_tst
 # Loading work.main_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port dp[2] :: @time = 85000.000 ps
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ERROR! Vector Mismatch for output port dp[0] :: @time = 80000.000 ps
 #      Expected value = 0000
-#      Real value = 0100
-#           1 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Waveform.vwf.vt(770)
+#      Real value = 0001
+# ERROR! Vector Mismatch for output port dp[2] :: @time = 205000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+#           2 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(797)
 #    Time: 10 us  Iteration: 0  Instance: /main_vlg_vec_tst/tb_out

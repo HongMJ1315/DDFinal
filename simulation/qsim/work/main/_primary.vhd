@@ -11,6 +11,7 @@ entity main is
         SEG0            : out    vl_logic_vector(6 downto 0);
         SEG1            : out    vl_logic_vector(6 downto 0);
         SEG2            : out    vl_logic_vector(6 downto 0);
-        SEG3            : out    vl_logic_vector(6 downto 0)
+        SEG3            : out    vl_logic_vector(6 downto 0);
+        check           : out    vl_logic
     );
 end main;
