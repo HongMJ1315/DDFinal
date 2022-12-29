@@ -1,5 +1,5 @@
 Flow report for main
-Thu Dec 29 19:29:04 2022
+Thu Dec 29 22:22:12 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 29 19:29:04 2022      ;
+; Flow Status                        ; Successful - Thu Dec 29 22:22:12 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 252                                        ;
-;     Total combinational functions  ; 252                                        ;
-;     Dedicated logic registers      ; 31                                         ;
-; Total registers                    ; 31                                         ;
+; Total logic elements               ; 1,663                                      ;
+;     Total combinational functions  ; 1,523                                      ;
+;     Dedicated logic registers      ; 191                                        ;
+; Total registers                    ; 191                                        ;
 ; Total pins                         ; 41                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -66,26 +66,26 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/29/2022 19:23:31 ;
+; Start date & time ; 12/29/2022 22:18:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                   ;
-+-------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268987182796939.167231301132564                               ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                            ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                     ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                                      ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                         ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                        ; --            ; --          ; Top            ;
-+-------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                         ;
++-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 66504332877567.167232351920192                                      ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                  ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                         ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                           ; <None>        ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                            ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                               ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                              ; --            ; --          ; Top            ;
++-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -93,18 +93,12 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4601 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4601 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4612 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4596 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4612 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4601 MB             ; 00:00:01                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4741 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4599 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4604 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4604 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4604 MB             ; 00:00:01                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,17 +107,11 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -131,16 +119,10 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/gonec/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/gonec/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/gonec/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/gonec/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/gonec/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/gonec/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog main -c main --vector_source=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/Waveform.vwf --testbench_file=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ main -c main
 
 
 

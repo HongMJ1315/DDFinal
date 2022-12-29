@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/29/2022 19:29:02"
+// Generated on "12/29/2022 22:22:11"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    main
 // 
@@ -138,6 +138,26 @@ begin
 end
 
 
+// expected dp[ 3 ]
+initial
+begin
+	dp_expected[3] = 1'b0;
+end 
+// expected dp[ 2 ]
+initial
+begin
+	dp_expected[2] = 1'b0;
+end 
+// expected dp[ 1 ]
+initial
+begin
+	dp_expected[1] = 1'b0;
+end 
+// expected dp[ 0 ]
+initial
+begin
+	dp_expected[0] = 1'b0;
+end 
 // expected LED0[ 6 ]
 initial
 begin
@@ -305,26 +325,6 @@ initial
 begin
 	LED3_expected[0] = 1'bX;
 	LED3_expected[0] = #999000 1'b0;
-end 
-// expected dp[ 3 ]
-initial
-begin
-	dp_expected[3] = 1'b0;
-end 
-// expected dp[ 2 ]
-initial
-begin
-	dp_expected[2] = 1'b0;
-end 
-// expected dp[ 1 ]
-initial
-begin
-	dp_expected[1] = 1'b0;
-end 
-// expected dp[ 0 ]
-initial
-begin
-	dp_expected[0] = 1'b0;
 end 
 // generate trigger
 always @(dp_expected or dp or LED0_expected or LED0 or LED1_expected or LED1 or LED2_expected or LED2 or LED3_expected or LED3)
@@ -805,35 +805,34 @@ main i1 (
 initial
 begin
 	BUT[2] = 1'b0;
-	BUT[2] = #200000 1'b1;
-	BUT[2] = #20000 1'b0;
-	BUT[2] = #50000 1'b1;
-	BUT[2] = #30000 1'b0;
+	BUT[2] = #10000 1'b1;
 end 
 // BUT[ 1 ]
 initial
 begin
+	BUT[1] = 1'b1;
+	# 50000;
+	repeat(17)
+	begin
+		BUT[1] = 1'b0;
+		BUT[1] = #5000 1'b1;
+		# 5000;
+	end
 	BUT[1] = 1'b0;
+	BUT[1] = #50000 1'b1;
+	BUT[1] = #290000 1'b0;
+	BUT[1] = #50000 1'b1;
+	BUT[1] = #240000 1'b0;
+	BUT[1] = #60000 1'b1;
+	BUT[1] = #80000 1'b0;
+	BUT[1] = #70000 1'b1;
 end 
 // BUT[ 0 ]
 initial
 begin
-	BUT[0] = 1'b0;
-	BUT[0] = #25000 1'b1;
-	# 5000;
-	repeat(26)
-	begin
-		BUT[0] = 1'b0;
-		BUT[0] = #5000 1'b1;
-		# 5000;
-	end
-	repeat(9)
-	begin
-		BUT[0] = 1'b0;
-		BUT[0] = #5000 1'b1;
-		# 5000;
-	end
-	BUT[0] = 1'b0;
+	BUT[0] = 1'b1;
+	BUT[0] = #690000 1'b0;
+	BUT[0] = #50000 1'b1;
 end 
 // SW[ 3 ]
 initial
@@ -848,13 +847,12 @@ end
 // SW[ 1 ]
 initial
 begin
-	SW[1] = 1'b0;
+	SW[1] = 1'b1;
 end 
 // SW[ 0 ]
 initial
 begin
-	SW[0] = 1'b1;
-	SW[0] = #450000 1'b0;
+	SW[0] = 1'b0;
 end 
 
 // clk
@@ -868,8 +866,7 @@ end
 // reset
 initial
 begin
-	reset = 1'b1;
-	reset = #10000 1'b0;
+	reset = 1'b0;
 end 
 
 main_vlg_sample_tst tb_sample (

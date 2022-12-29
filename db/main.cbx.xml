@@ -3,10 +3,16 @@
 	<PROJECT NAME="main">
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_blm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_edm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_gdm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_edm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_alm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_qmm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_egm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_edm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|todigits:todig1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_alm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_egm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_gdm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_edm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_7om.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_alm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_tmm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_egm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

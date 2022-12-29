@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\HongMingJun\OneDrive\Documents\NTOU\final\simulation\qsim
 vmain
-Z1 !s100 6I16GI2hz=g`5OE==3[Q<2
-Z2 ISW1?@;a_Ii>Y2::6EcE;P1
+Z1 !s100 N8`A2=?[QHE3F=TcI_?Nd2
+Z2 InU2XF6hzfe1R4E2APWTeP1
 Z3 ViUm@f=1LNNANO4UCJ5M7]2
-Z4 dC:\Users\gonec\OneDrive\Documents\NTOU\final\simulation\qsim
-Z5 w1672313344
+Z4 dC:\Users\HongMingJun\OneDrive\Documents\NTOU\final\simulation\qsim
+Z5 w1672323732
 Z6 8main.vo
 Z7 Fmain.vo
 L0 31
@@ -19,16 +19,16 @@ Z9 !s90 -work|work|main.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1672313344.757000
+Z11 !s108 1672323733.151000
 Z12 !s107 main.vo|
 !s101 -O0
 vmain_vlg_check_tst
 !i10b 1
-Z13 !s100 C>R=TQ6UG66oC>6n>z@KT0
-Z14 I=KHiDa:?^dj]z=ffY5ZAa1
+Z13 !s100 oZKMmf=EXaCQI6Z;QC:fR2
+Z14 I;b]j9KdoI^2;DVkQzT]G22
 Z15 VHh`jk5zVh:]_e6H7Y1aP90
 R4
-Z16 w1672313342
+Z16 w1672323731
 Z17 8Waveform.vwf.vt
 Z18 FWaveform.vwf.vt
 L0 63
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1672313344.849000
+Z19 !s108 1672323733.320000
 Z20 !s107 Waveform.vwf.vt|
 Z21 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
@@ -62,8 +62,8 @@ R21
 R10
 vmain_vlg_vec_tst
 !i10b 1
-!s100 DELUZn3bi0ALHSiUI:IFV0
-I@FC=hQdiB[^:Y1nP<aGI21
+!s100 S`]d_>E`;5i>>g548cd[F2
+IaCkUXnh>QEF:LI:SO0Pb90
 Z25 VHZma`Q?n[z_A]1=F?<UDB3
 R4
 R16
