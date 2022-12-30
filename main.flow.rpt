@@ -1,5 +1,5 @@
 Flow report for main
-Fri Dec 30 11:33:04 2022
+Fri Dec 30 13:44:09 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 30 11:33:04 2022      ;
+; Flow Status                        ; Successful - Fri Dec 30 13:44:09 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 2,920 / 15,408 ( 19 % )                    ;
-;     Total combinational functions  ; 2,859 / 15,408 ( 19 % )                    ;
-;     Dedicated logic registers      ; 263 / 15,408 ( 2 % )                       ;
-; Total registers                    ; 263                                        ;
+; Total logic elements               ; 2,948 / 15,408 ( 19 % )                    ;
+;     Total combinational functions  ; 2,894 / 15,408 ( 19 % )                    ;
+;     Dedicated logic registers      ; 277 / 15,408 ( 2 % )                       ;
+; Total registers                    ; 277                                        ;
 ; Total pins                         ; 43 / 347 ( 12 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/30/2022 11:32:37 ;
+; Start date & time ; 12/30/2022 13:43:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 66504332877567.167237115726904                                      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268987182796939.167237902848732                                     ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                         ; --            ; --          ; eda_simulation ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4687 MB             ; 00:00:04                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 4986 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4646 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4550 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4689 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4991 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4589 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,11 +107,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Win11            ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; z13              ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Fri Dec 30 11:32:42 2022
+Fri Dec 30 13:43:52 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -17,23 +17,23 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div0
- 13. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div1
- 14. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod0
- 15. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div2
- 16. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod1
- 17. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod2
- 18. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0
- 19. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|todigits:todig1|lpm_divide:Div0
- 20. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod0
- 21. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0
- 22. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod0
- 23. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0
- 24. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod1
- 25. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Div1
- 26. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div1
- 27. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod2
- 28. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod1
+ 12. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|todigits:todig1|lpm_divide:Div0
+ 14. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod0
+ 15. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0
+ 16. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod0
+ 17. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|todigits:todig1|lpm_divide:Mod0
+ 18. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod1
+ 19. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Div1
+ 20. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div1
+ 21. Parameter Settings for Inferred Entity Instance: clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod2
+ 22. Parameter Settings for Inferred Entity Instance: alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod1
+ 23. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div0
+ 24. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div1
+ 25. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod0
+ 26. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div2
+ 27. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod1
+ 28. Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod2
  29. Parameter Settings for Inferred Entity Instance: stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div0
  30. Parameter Settings for Inferred Entity Instance: stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div1
  31. Parameter Settings for Inferred Entity Instance: stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Mod0
@@ -67,15 +67,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 30 11:32:42 2022      ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 30 13:43:52 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 2,999                                      ;
-;     Total combinational functions  ; 2,859                                      ;
-;     Dedicated logic registers      ; 263                                        ;
-; Total registers                    ; 263                                        ;
+; Total logic elements               ; 3,034                                      ;
+;     Total combinational functions  ; 2,894                                      ;
+;     Dedicated logic registers      ; 277                                        ;
+; Total registers                    ; 277                                        ;
 ; Total pins                         ; 43                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -177,56 +177,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 16     ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; countdown.vhd                    ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/countdown.vhd              ;         ;
-; digits.vhd                       ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/digits.vhd                 ;         ;
-; alarm.vhd                        ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/alarm.vhd                  ;         ;
-; stopwatch.vhd                    ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/stopwatch.vhd              ;         ;
-; thtf.vhd                         ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/thtf.vhd                   ;         ;
-; todigits.vhd                     ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/todigits.vhd               ;         ;
-; seven_dig.vhd                    ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/seven_dig.vhd              ;         ;
-; main.vhd                         ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/main.vhd                   ;         ;
-; clock.vhd                        ; yes             ; User VHDL File               ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/clock.vhd                  ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                 ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc            ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                 ;         ;
-; db/lpm_divide_4jm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_4jm.tdf      ;         ;
-; db/sign_div_unsign_5nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_5nh.tdf ;         ;
-; db/alt_u_div_odf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_odf.tdf       ;         ;
-; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_1tc.tdf         ;         ;
-; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_2tc.tdf         ;         ;
-; db/lpm_divide_qhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_qhm.tdf      ;         ;
-; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_rlh.tdf ;         ;
-; db/alt_u_div_4bf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_4bf.tdf       ;         ;
-; db/lpm_divide_bbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_bbm.tdf      ;         ;
-; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_9nh.tdf ;         ;
-; db/alt_u_div_0ef.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_0ef.tdf       ;         ;
-; db/lpm_divide_nhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_nhm.tdf      ;         ;
-; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_olh.tdf ;         ;
-; db/alt_u_div_uaf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_uaf.tdf       ;         ;
-; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_7gm.tdf      ;         ;
-; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_8kh.tdf ;         ;
-; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_u7f.tdf       ;         ;
-; db/lpm_divide_b8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_b8m.tdf      ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_9kh.tdf ;         ;
-; db/alt_u_div_08f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_08f.tdf       ;         ;
-; db/lpm_divide_8gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_8gm.tdf      ;         ;
-; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_akh.tdf ;         ;
-; db/alt_u_div_18f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_18f.tdf       ;         ;
-; db/lpm_divide_d8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/lpm_divide_d8m.tdf      ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/sign_div_unsign_bkh.tdf ;         ;
-; db/alt_u_div_48f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/alt_u_div_48f.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; countdown.vhd                    ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/countdown.vhd              ;         ;
+; digits.vhd                       ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/digits.vhd                 ;         ;
+; alarm.vhd                        ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/alarm.vhd                  ;         ;
+; stopwatch.vhd                    ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/stopwatch.vhd              ;         ;
+; thtf.vhd                         ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/thtf.vhd                   ;         ;
+; todigits.vhd                     ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/todigits.vhd               ;         ;
+; seven_dig.vhd                    ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/seven_dig.vhd              ;         ;
+; main.vhd                         ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/main.vhd                   ;         ;
+; clock.vhd                        ; yes             ; User VHDL File               ; C:/Users/gonec/OneDrive/Documents/NTOU/final/clock.vhd                  ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf           ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc          ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc      ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc           ;         ;
+; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_7gm.tdf      ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_8kh.tdf ;         ;
+; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_u7f.tdf       ;         ;
+; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/add_sub_1tc.tdf         ;         ;
+; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/add_sub_2tc.tdf         ;         ;
+; db/lpm_divide_b8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_b8m.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_08f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_08f.tdf       ;         ;
+; db/lpm_divide_8gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_8gm.tdf      ;         ;
+; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_akh.tdf ;         ;
+; db/alt_u_div_18f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_18f.tdf       ;         ;
+; db/lpm_divide_d8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_d8m.tdf      ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_bkh.tdf ;         ;
+; db/alt_u_div_48f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_48f.tdf       ;         ;
+; db/lpm_divide_4jm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_4jm.tdf      ;         ;
+; db/sign_div_unsign_5nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_5nh.tdf ;         ;
+; db/alt_u_div_odf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_odf.tdf       ;         ;
+; db/lpm_divide_qhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_qhm.tdf      ;         ;
+; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_rlh.tdf ;         ;
+; db/alt_u_div_4bf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_4bf.tdf       ;         ;
+; db/lpm_divide_bbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_bbm.tdf      ;         ;
+; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_9nh.tdf ;         ;
+; db/alt_u_div_0ef.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_0ef.tdf       ;         ;
+; db/lpm_divide_nhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/lpm_divide_nhm.tdf      ;         ;
+; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/sign_div_unsign_olh.tdf ;         ;
+; db/alt_u_div_uaf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/gonec/OneDrive/Documents/NTOU/final/db/alt_u_div_uaf.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -234,27 +234,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 2,999        ;
+; Estimated Total logic elements              ; 3,034        ;
 ;                                             ;              ;
-; Total combinational functions               ; 2859         ;
+; Total combinational functions               ; 2894         ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 725          ;
-;     -- 3 input functions                    ; 790          ;
-;     -- <=2 input functions                  ; 1344         ;
+;     -- 4 input functions                    ; 729          ;
+;     -- 3 input functions                    ; 800          ;
+;     -- <=2 input functions                  ; 1365         ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 1987         ;
-;     -- arithmetic mode                      ; 872          ;
+;     -- normal mode                          ; 2008         ;
+;     -- arithmetic mode                      ; 886          ;
 ;                                             ;              ;
-; Total registers                             ; 263          ;
-;     -- Dedicated logic registers            ; 263          ;
+; Total registers                             ; 277          ;
+;     -- Dedicated logic registers            ; 277          ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
 ; I/O pins                                    ; 43           ;
 ; Embedded Multiplier 9-bit elements          ; 0            ;
 ; Maximum fan-out node                        ; BUT[1]~input ;
 ; Maximum fan-out                             ; 171          ;
-; Total fan-out                               ; 8656         ;
+; Total fan-out                               ; 8809         ;
 ; Average fan-out                             ; 2.70         ;
 +---------------------------------------------+--------------+
 
@@ -264,8 +264,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main                                        ; 2859 (88)         ; 263 (10)     ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |main                                                                                                                                  ; work         ;
-;    |alarm:ALARM_0|                           ; 153 (50)          ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0                                                                                                                    ; work         ;
+; |main                                        ; 2894 (111)        ; 277 (23)     ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |main                                                                                                                                  ; work         ;
+;    |alarm:ALARM_0|                           ; 164 (61)          ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0                                                                                                                    ; work         ;
 ;       |todigits:TODIGIT_0|                   ; 103 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0                                                                                                 ; work         ;
 ;          |lpm_divide:Div0|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0                                                                                 ; work         ;
 ;             |lpm_divide_7gm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0|lpm_divide_7gm:auto_generated                                                   ; work         ;
@@ -283,7 +283,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |lpm_divide_d8m:auto_generated|  ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod1|lpm_divide_d8m:auto_generated                                                   ; work         ;
 ;                |sign_div_unsign_bkh:divider| ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod1|lpm_divide_d8m:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
 ;                   |alt_u_div_48f:divider|    ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Mod1|lpm_divide_d8m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_48f:divider ; work         ;
-;    |clock:CLOCK_0|                           ; 218 (55)          ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0                                                                                                                    ; work         ;
+;    |clock:CLOCK_0|                           ; 220 (57)          ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0                                                                                                                    ; work         ;
 ;       |thtf:thtf1|                           ; 129 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|thtf:thtf1                                                                                                         ; work         ;
 ;          |lpm_divide:Div0|                   ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0                                                                                         ; work         ;
 ;             |lpm_divide_7gm:auto_generated|  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clock:CLOCK_0|thtf:thtf1|lpm_divide:Div0|lpm_divide_7gm:auto_generated                                                           ; work         ;
@@ -344,7 +344,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |seven_dig:SEVEN_SEG_1|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_1                                                                                                            ; work         ;
 ;    |seven_dig:SEVEN_SEG_2|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_2                                                                                                            ; work         ;
 ;    |seven_dig:SEVEN_SEG_3|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|seven_dig:SEVEN_SEG_3                                                                                                            ; work         ;
-;    |stopwatch:STOPWATCH_0|                   ; 1241 (175)        ; 160 (160)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|stopwatch:STOPWATCH_0                                                                                                            ; work         ;
+;    |stopwatch:STOPWATCH_0|                   ; 1240 (174)        ; 160 (160)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|stopwatch:STOPWATCH_0                                                                                                            ; work         ;
 ;       |digits:u1|                            ; 1066 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|stopwatch:STOPWATCH_0|digits:u1                                                                                                  ; work         ;
 ;          |lpm_divide:Div0|                   ; 123 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div0                                                                                  ; work         ;
 ;             |lpm_divide_4jm:auto_generated|  ; 123 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div0|lpm_divide_4jm:auto_generated                                                    ; work         ;
@@ -408,8 +408,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Register name                         ; Reason for Removal             ;
 +---------------------------------------+--------------------------------+
 ; clock:CLOCK_0|secc                    ; Merged with alarm:ALARM_0|play ;
-; alarm:ALARM_0|cnt[0]                  ; Merged with alarm:ALARM_0|play ;
-; Total Number of Removed Registers = 2 ;                                ;
+; Total Number of Removed Registers = 1 ;                                ;
 +---------------------------------------+--------------------------------+
 
 
@@ -418,12 +417,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 263   ;
+; Total registers                              ; 277   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 9     ;
-; Number of registers using Asynchronous Clear ; 239   ;
+; Number of registers using Asynchronous Clear ; 240   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 140   ;
+; Number of registers using Clock Enable       ; 177   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -434,154 +433,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |main|clock:CLOCK_0|th1[4]          ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |main|countdown:CNTDOWN|cntdown[12] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|digit3                        ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |main|countdown:CNTDOWN|cntdown[0]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|digit1                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|dp                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|digit3[0]                     ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_0|LED[0]  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_1|LED[1]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|digit3[1]                     ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_0|LED[1]  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_1|LED[0]  ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_2|LED[1]  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_3|LED[1]  ;
-; 17:1               ; 14 bits   ; 154 LEs       ; 98 LEs               ; 56 LEs                 ; No         ; |main|stopwatch:STOPWATCH_0|tmp[1]  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|seven_dig:SEVEN_SEG_3|LED[0]  ;
+; 17:1               ; 14 bits   ; 154 LEs       ; 98 LEs               ; 56 LEs                 ; No         ; |main|stopwatch:STOPWATCH_0|tmp[11] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div0 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 10             ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_4jm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div1 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 7              ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_qhm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod0 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 14             ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div2 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 4              ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_nhm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod1 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 14             ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod2 ;
-+------------------------+----------------+----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                               ;
-+------------------------+----------------+----------------------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                            ;
-; LPM_WIDTHD             ; 14             ; Untyped                                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
-; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
-+------------------------+----------------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -837,6 +698,144 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 10             ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_4jm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div1 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 7              ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_qhm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod0 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 14             ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Div2 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 4              ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_nhm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod1 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 14             ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: countdown:CNTDOWN|digits:u1|lpm_divide:Mod2 ;
++------------------------+----------------+----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                               ;
++------------------------+----------------+----------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                            ;
+; LPM_WIDTHD             ; 14             ; Untyped                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                            ;
+; CBXI_PARAMETER         ; lpm_divide_bbm ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                     ;
++------------------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Div0 ;
 +------------------------+----------------+--------------------------------------------------------+
@@ -980,7 +979,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -990,7 +989,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Dec 30 11:32:37 2022
+    Info: Processing started: Fri Dec 30 13:43:48 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file countdown.vhd
@@ -1021,7 +1020,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file clock.v
     Info (12022): Found design unit 1: clock-clock
     Info (12023): Found entity 1: clock
 Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "check" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "clock" for hierarchy "clock:CLOCK_0"
+Warning (10492): VHDL Process Statement warning at clock.vhd(89): signal "SW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at clock.vhd(104): signal "SW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "todigits" for hierarchy "clock:CLOCK_0|todigits:todig1"
 Info (12128): Elaborating entity "thtf" for hierarchy "clock:CLOCK_0|thtf:thtf1"
 Info (12128): Elaborating entity "stopwatch" for hierarchy "stopwatch:STOPWATCH_0"
@@ -1047,21 +1049,19 @@ Info (10041): Inferred latch for "dot[2]" at stopwatch.vhd(116)
 Info (10041): Inferred latch for "dot[3]" at stopwatch.vhd(116)
 Info (12128): Elaborating entity "digits" for hierarchy "stopwatch:STOPWATCH_0|digits:u1"
 Info (12128): Elaborating entity "alarm" for hierarchy "alarm:ALARM_0"
-Warning (10492): VHDL Process Statement warning at alarm.vhd(103): signal "dig0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at alarm.vhd(103): signal "dig1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at alarm.vhd(103): signal "dig2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at alarm.vhd(103): signal "dig3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(50): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(65): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(104): signal "dig0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(104): signal "dig1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(104): signal "dig2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm.vhd(104): signal "dig3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "countdown" for hierarchy "countdown:CNTDOWN"
-Warning (10812): VHDL warning at countdown.vhd(40): sensitivity list already contains bot
-Warning (10812): VHDL warning at countdown.vhd(54): sensitivity list already contains bot
+Warning (10812): VHDL warning at countdown.vhd(41): sensitivity list already contains bot
+Warning (10492): VHDL Process Statement warning at countdown.vhd(46): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10812): VHDL warning at countdown.vhd(55): sensitivity list already contains bot
+Warning (10492): VHDL Process Statement warning at countdown.vhd(60): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "seven_dig" for hierarchy "seven_dig:SEVEN_SEG_0"
 Info (278001): Inferred 23 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div0"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div1"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod0"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div2"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod1"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alarm:ALARM_0|todigits:TODIGIT_0|Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "clock:CLOCK_0|todigits:todig1|Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "clock:CLOCK_0|thtf:thtf1|Mod0"
@@ -1073,66 +1073,18 @@ Info (278001): Inferred 23 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alarm:ALARM_0|todigits:TODIGIT_0|Div1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "clock:CLOCK_0|thtf:thtf1|Mod2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alarm:ALARM_0|todigits:TODIGIT_0|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Div2"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "countdown:CNTDOWN|digits:u1|Mod2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Div1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Div2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Mod1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "stopwatch:STOPWATCH_0|digits:u1|Mod2"
-Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div0"
-Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "14"
-    Info (12134): Parameter "LPM_WIDTHD" = "10"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4jm.tdf
-    Info (12023): Found entity 1: lpm_divide_4jm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_5nh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_odf.tdf
-    Info (12023): Found entity 1: alt_u_div_odf
-Warning (12136): Clear box output file C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_1tc.tdf is not compatible with the current compile. Used regenerated output file C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_1tc.tdf for elaboration
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
-    Info (12023): Found entity 1: add_sub_1tc
-Warning (12136): Clear box output file C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_2tc.tdf is not compatible with the current compile. Used regenerated output file C:/Users/HongMingJun/OneDrive/Documents/NTOU/final/db/add_sub_2tc.tdf for elaboration
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
-    Info (12023): Found entity 1: add_sub_2tc
-Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div1"
-Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "14"
-    Info (12134): Parameter "LPM_WIDTHD" = "7"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_qhm.tdf
-    Info (12023): Found entity 1: lpm_divide_qhm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_rlh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4bf.tdf
-    Info (12023): Found entity 1: alt_u_div_4bf
-Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Mod0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "14"
-    Info (12134): Parameter "LPM_WIDTHD" = "14"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bbm.tdf
-    Info (12023): Found entity 1: lpm_divide_bbm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0ef.tdf
-    Info (12023): Found entity 1: alt_u_div_0ef
-Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div2"
-Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div2" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "14"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_nhm.tdf
-    Info (12023): Found entity 1: lpm_divide_nhm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_olh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uaf.tdf
-    Info (12023): Found entity 1: alt_u_div_uaf
 Info (12130): Elaborated megafunction instantiation "alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0"
 Info (12133): Instantiated megafunction "alarm:ALARM_0|todigits:TODIGIT_0|lpm_divide:Div0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "5"
@@ -1145,6 +1097,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_8kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u7f.tdf
     Info (12023): Found entity 1: alt_u_div_u7f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
+    Info (12023): Found entity 1: add_sub_1tc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
+    Info (12023): Found entity 1: add_sub_2tc
 Info (12130): Elaborated megafunction instantiation "clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod0"
 Info (12133): Instantiated megafunction "clock:CLOCK_0|thtf:thtf1|lpm_divide:Mod0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "5"
@@ -1187,6 +1143,54 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_bkh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_48f.tdf
     Info (12023): Found entity 1: alt_u_div_48f
+Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4jm.tdf
+    Info (12023): Found entity 1: lpm_divide_4jm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_5nh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_odf.tdf
+    Info (12023): Found entity 1: alt_u_div_odf
+Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_qhm.tdf
+    Info (12023): Found entity 1: lpm_divide_qhm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_rlh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4bf.tdf
+    Info (12023): Found entity 1: alt_u_div_4bf
+Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "14"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bbm.tdf
+    Info (12023): Found entity 1: lpm_divide_bbm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0ef.tdf
+    Info (12023): Found entity 1: alt_u_div_0ef
+Info (12130): Elaborated megafunction instantiation "countdown:CNTDOWN|digits:u1|lpm_divide:Div2"
+Info (12133): Instantiated megafunction "countdown:CNTDOWN|digits:u1|lpm_divide:Div2" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_nhm.tdf
+    Info (12023): Found entity 1: lpm_divide_nhm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_olh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uaf.tdf
+    Info (12023): Found entity 1: alt_u_div_uaf
 Warning (13012): Latch stopwatch:STOPWATCH_0|tmp[3] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal stopwatch:STOPWATCH_0|sw
 Warning (13012): Latch stopwatch:STOPWATCH_0|tmp[2] has unsafe behavior
@@ -1215,6 +1219,8 @@ Warning (13012): Latch stopwatch:STOPWATCH_0|tmp[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal stopwatch:STOPWATCH_0|sw
 Warning (13012): Latch stopwatch:STOPWATCH_0|tmp[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal stopwatch:STOPWATCH_0|sw
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "check" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "countdown:CNTDOWN|digits:u1|lpm_divide:Mod1|lpm_divide_bbm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider|add_sub_6_result_int[0]~14"
@@ -1245,14 +1251,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "stopwatch:STOPWATCH_0|digits:u1|lpm_divide:Mod1|lpm_divide_bbm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider|add_sub_13_result_int[0]~28"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3062 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3097 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 3019 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4687 megabytes
-    Info: Processing ended: Fri Dec 30 11:32:42 2022
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 3054 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 4700 megabytes
+    Info: Processing ended: Fri Dec 30 13:43:52 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

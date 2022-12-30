@@ -12,6 +12,7 @@ entity alarm is
     now1 : in integer range 0 to 9;
     now2 : in integer range 0 to 9;
     now3 : in integer range 0 to 9;
+    sw : in std_logic;
     BUT : in std_logic_vector(2 downto 0);
     ring : out std_logic;
     tar0 : out integer range 0 to 9;
@@ -46,7 +47,7 @@ begin
     if reset = '1' then -- reset
       th <= 0;
     else
-      if rising_edge(BUT(0)) then
+      if rising_edge(BUT(0)) and sw = '1' then
         if th = 23 then
           th <= 0;
         else
@@ -61,7 +62,7 @@ begin
     if reset = '1' then -- reset
       tm <= 0;
     else
-      if rising_edge(BUT(1)) then
+      if rising_edge(BUT(1)) and sw = '1' then
         if tm = 59 then
           tm <= 0;
         else
@@ -77,8 +78,8 @@ begin
       cnt <= "0000000000000000000000";
     else
       if clk'event and clk = '1' then
-        -- if cnt = 227273 then
-        if cnt = 5 then --for test
+        if cnt = 227273 then
+          -- if cnt = 5 then --for test
           cnt <= "0000000000000000000000";
         else
           cnt <= cnt + 1;

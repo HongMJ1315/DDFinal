@@ -8,6 +8,7 @@ entity countdown is
     clk : in std_logic;
     reset : in std_logic;
     sec : in std_logic;
+    sw : in std_logic;
     bot : in std_logic_vector(2 downto 0);
     ring : out std_logic;
     dot : out std_logic_vector(3 downto 0);
@@ -42,7 +43,7 @@ begin
     if bot(2) = '0' or reset = '1'then
       cnt1 <= "00000000000000";
 
-    elsif bot(1)'event and bot(1) = '0' then
+    elsif bot(1)'event and bot(1) = '0' and sw = '1' then
       if cnt1 = 9999 then
         cnt1 <= "00000000000000";
       else
@@ -56,7 +57,7 @@ begin
     if bot(2) = '0' or reset = '1' then
       stats <= '0';
     else
-      if bot(0)'event and bot(0) = '0' then
+      if bot(0)'event and bot(0) = '0' and sw = '1' then
         stats <= not stats;
       end if;
     end if;
@@ -83,8 +84,8 @@ begin
       cnt <= "0000000000000000000000";
     else
       if clk'event and clk = '1' then
-        -- if cnt = 227273 then
-        if cnt = 5 then --for test
+        if cnt = 227273 then
+          -- if cnt = 5 then --for test
           cnt <= "0000000000000000000000";
         else
           cnt <= cnt + 1;
@@ -112,7 +113,7 @@ begin
       ok <= '0';
     end if;
   end process;
-  dot <= "0" & stats & "0" & sec;
+  dot <= "1" & stats & "1" & sec;
   ring <= clk when play = '1' and ok = '1' else '0'; --for test
   num3 <= now3;
   num2 <= now2;

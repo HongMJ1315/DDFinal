@@ -23,6 +23,6 @@ begin
   digit2 <= th mod 10;
   digit3 <= m/10;
   digit4 <= m mod 10;
-  dot <= '1' when h >= 12 else
-    '0';
+  dot <= '0' when h >= 12 else
+    '1';
 end architecture;

@@ -42,8 +42,6 @@ architecture clock of clock is
       digit4 : out integer range 0 to 9
     );
   end component;
-
-  
   signal dig11, dig12, dig13, dig14, dig21, dig22, dig23, dig24 : integer range 0 to 9;
 
   signal tm1, tm2 : integer range 0 to 59;
@@ -88,7 +86,7 @@ begin
     if reset = '1' then -- reset
       th2 <= 0;
     else
-      if rising_edge(BUT(0)) then
+      if rising_edge(BUT(0)) and SW = '1' then
         if h = 23 then
           th2 <= 0;
         else
@@ -103,7 +101,7 @@ begin
     if reset = '1' then -- reset
       tm2 <= 0;
     else
-      if rising_edge(BUT(1)) then
+      if rising_edge(BUT(1)) and SW = '1' then
         if m = 59 then
           tm2 <= 0;
         else
@@ -126,7 +124,7 @@ begin
 
   h <= th2 when SW = '1' else th1;
   m <= tm2 when SW = '1' else tm1;
-  dp <= '0' & secc & '0' & dot;
+  dp <= '1' & secc & '1' & dot;
   todig1 : todigits port map(h, m, dig11, dig12, dig13, dig14);
   thtf1 : thtf port map(h, m, dot, dig21, dig22, dig23, dig24);
   digit0 <= dig11 when ff = '0' else dig21;
