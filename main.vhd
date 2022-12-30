@@ -164,6 +164,10 @@ begin
     "0000" when SW(2) = '1' else
     dp3 when SW(3) = '1' else
     dp1;
+  ring <=
+    ring1 when SW(2) = '1' else
+    ring2 when SW(3) = '1' else
+    '0';
 
   SEVEN_SEG_0 : seven_dig port map(digit0, SEG0);
   SEVEN_SEG_1 : seven_dig port map(digit1, SEG1);

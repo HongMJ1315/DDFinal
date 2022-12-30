@@ -1,0 +1,293 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'stopwatch:STOPWATCH_0|sw'
+Slack : -4.520
+TNS   : -55.201
+
+Type  : Slow 1200mV 85C Model Setup 'BUT[1]'
+Slack : -2.486
+TNS   : -343.103
+
+Type  : Slow 1200mV 85C Model Setup 'dcnttest[3]'
+Slack : -1.998
+TNS   : -41.243
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.878
+TNS   : -60.332
+
+Type  : Slow 1200mV 85C Model Setup 'BUT[0]'
+Slack : -0.993
+TNS   : -5.548
+
+Type  : Slow 1200mV 85C Model Setup 'BUT[2]'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopwatch:STOPWATCH_0|sw'
+Slack : -2.457
+TNS   : -16.401
+
+Type  : Slow 1200mV 85C Model Hold 'BUT[0]'
+Slack : -1.415
+TNS   : -1.415
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.602
+TNS   : -2.618
+
+Type  : Slow 1200mV 85C Model Hold 'BUT[1]'
+Slack : -0.473
+TNS   : -5.929
+
+Type  : Slow 1200mV 85C Model Hold 'dcnttest[3]'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'BUT[2]'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'dcnttest[3]'
+Slack : -0.158
+TNS   : -1.290
+
+Type  : Slow 1200mV 85C Model Recovery 'BUT[0]'
+Slack : -0.080
+TNS   : -0.080
+
+Type  : Slow 1200mV 85C Model Recovery 'BUT[1]'
+Slack : -0.020
+TNS   : -0.200
+
+Type  : Slow 1200mV 85C Model Removal 'BUT[1]'
+Slack : -0.179
+TNS   : -8.383
+
+Type  : Slow 1200mV 85C Model Removal 'dcnttest[3]'
+Slack : -0.067
+TNS   : -0.603
+
+Type  : Slow 1200mV 85C Model Removal 'BUT[0]'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BUT[1]'
+Slack : -3.000
+TNS   : -174.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -53.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BUT[0]'
+Slack : -3.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BUT[2]'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dcnttest[3]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stopwatch:STOPWATCH_0|sw'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'stopwatch:STOPWATCH_0|sw'
+Slack : -4.138
+TNS   : -50.804
+
+Type  : Slow 1200mV 0C Model Setup 'BUT[1]'
+Slack : -2.156
+TNS   : -294.371
+
+Type  : Slow 1200mV 0C Model Setup 'dcnttest[3]'
+Slack : -1.706
+TNS   : -34.394
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.592
+TNS   : -48.597
+
+Type  : Slow 1200mV 0C Model Setup 'BUT[0]'
+Slack : -0.765
+TNS   : -3.934
+
+Type  : Slow 1200mV 0C Model Setup 'BUT[2]'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'stopwatch:STOPWATCH_0|sw'
+Slack : -2.153
+TNS   : -13.483
+
+Type  : Slow 1200mV 0C Model Hold 'BUT[0]'
+Slack : -1.355
+TNS   : -1.355
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.574
+TNS   : -2.635
+
+Type  : Slow 1200mV 0C Model Hold 'BUT[1]'
+Slack : -0.493
+TNS   : -6.099
+
+Type  : Slow 1200mV 0C Model Hold 'dcnttest[3]'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'BUT[2]'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'dcnttest[3]'
+Slack : -0.175
+TNS   : -1.631
+
+Type  : Slow 1200mV 0C Model Recovery 'BUT[0]'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Slow 1200mV 0C Model Recovery 'BUT[1]'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'BUT[1]'
+Slack : -0.170
+TNS   : -8.364
+
+Type  : Slow 1200mV 0C Model Removal 'dcnttest[3]'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'BUT[0]'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BUT[1]'
+Slack : -3.000
+TNS   : -174.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -53.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BUT[0]'
+Slack : -3.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BUT[2]'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dcnttest[3]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stopwatch:STOPWATCH_0|sw'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'stopwatch:STOPWATCH_0|sw'
+Slack : -2.597
+TNS   : -31.784
+
+Type  : Fast 1200mV 0C Model Setup 'dcnttest[3]'
+Slack : -1.186
+TNS   : -16.350
+
+Type  : Fast 1200mV 0C Model Setup 'BUT[1]'
+Slack : -0.989
+TNS   : -118.790
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.573
+TNS   : -12.480
+
+Type  : Fast 1200mV 0C Model Setup 'BUT[0]'
+Slack : -0.099
+TNS   : -0.305
+
+Type  : Fast 1200mV 0C Model Setup 'BUT[2]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'stopwatch:STOPWATCH_0|sw'
+Slack : -1.468
+TNS   : -11.068
+
+Type  : Fast 1200mV 0C Model Hold 'BUT[0]'
+Slack : -1.155
+TNS   : -1.155
+
+Type  : Fast 1200mV 0C Model Hold 'BUT[1]'
+Slack : -0.632
+TNS   : -22.341
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.432
+TNS   : -2.266
+
+Type  : Fast 1200mV 0C Model Hold 'dcnttest[3]'
+Slack : 0.196
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'BUT[2]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'dcnttest[3]'
+Slack : -0.199
+TNS   : -2.256
+
+Type  : Fast 1200mV 0C Model Recovery 'BUT[0]'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'BUT[1]'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'BUT[1]'
+Slack : -0.114
+TNS   : -5.438
+
+Type  : Fast 1200mV 0C Model Removal 'dcnttest[3]'
+Slack : -0.093
+TNS   : -1.021
+
+Type  : Fast 1200mV 0C Model Removal 'BUT[0]'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BUT[1]'
+Slack : -3.000
+TNS   : -201.442
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -55.818
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BUT[0]'
+Slack : -3.000
+TNS   : -16.608
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BUT[2]'
+Slack : -3.000
+TNS   : -4.096
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dcnttest[3]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stopwatch:STOPWATCH_0|sw'
+Slack : 0.368
+TNS   : 0.000
+
+------------------------------------------------------------
