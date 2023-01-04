@@ -81,7 +81,7 @@ main.vhd             ->主程式
 |  |-todigits.vhd
 |-countdown.vhd      ->計時器
 |  |-digits.vhd
-|-seven_dig.chd      ->將四個數字轉成七段位顯示器
+|-seven_dig.vhd      ->將四個數字轉成七段位顯示器
 ```
 
 ## 心得
