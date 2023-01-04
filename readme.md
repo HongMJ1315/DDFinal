@@ -54,6 +54,8 @@
 #### SW="00000100"
 
 設定鬧鐘時間
+->bt1 設定分鐘
+->bt0 設定小時
 
 #### SW="00001000"
 
@@ -61,3 +63,13 @@
 ->bt2 reset
 ->bt1 設定秒數(往上)
 ->bt0 開始倒數
+
+---
+
+## 架構
+
+![](https://i.imgur.com/veQJOfe.png)
+
+---
+
+[Demo](https://youtu.be/aMyx3BmqPqU)
